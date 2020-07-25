@@ -1,1 +1,4 @@
 export const ADD_COMMENT = 'ADD_COMMENT';
+export const CAMOSITE_LOADING = 'CAMPSITE_LOADING';
+export const CAMOSITE_FAILED = 'CAMPSITE_FAILED';
+export const ADD_CAMPSITE = 'ADD_CAMPSITE';
