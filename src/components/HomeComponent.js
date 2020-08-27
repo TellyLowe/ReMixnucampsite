@@ -4,7 +4,7 @@ import { Loading } from './LoadingComponent';
 
 function RenderCard({item, isLoading, errMess}) {
     if (isLoading) {
-        return <Loading/>;
+        return <Loading />;
     }
     if (errMess) {
         return <h4>{errMess}</h4>;
