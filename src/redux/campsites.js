@@ -1,17 +1,7 @@
-import * as ActionTypes from './ActionTypes';
+import { CAMPSITES } from '../shared/campsites';
 
-export const Campsites = (state = {
-        isLoading: true,
-        errMess: null,
-        campsites: []
-}, action) => {
+export const Campsites = (state = CAMPSITES, action) => {
     switch (action.type) {
-        case ActionTypes.ADD_CAMPSITE:
-            return {...state, isLoading: false, errMess: null, campsites: action.payload};
-        case ActionTypes.CAMOSITE_LOADING:
-            return {...state, isLoading: true, errMess: null, campsites: []};
-            case ActionTypes.CAMOSITE_FAILED:
-                return {...state, isLoading: false, errMess: action.payload};
         default:
             return state;
     }
